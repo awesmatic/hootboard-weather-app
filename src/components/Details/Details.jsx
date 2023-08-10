@@ -1,18 +1,21 @@
 import React from 'react'
 import './details.css'
+import { countryList } from '../../countryList';
 
 const Details = ({ data, setShowDetails, setCity }) => {
-    console.log(data)
 
     if (data) {
         var iconcode = data?.weather[0]?.icon;
         var iconurl = `http://openweathermap.org/img/w/${iconcode}.png`;
-        console.log(iconurl)
     }
 
     const getCityAndCountry = () => {
         let city = data.name;
         let country = data.sys.country
+
+        if (countryList[country]) {
+            country = countryList[country]
+        }
 
         return `${city} , ${country}`
     }
