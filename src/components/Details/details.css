@@ -1,14 +1,13 @@
 .details {
   background-color: white;
   border-radius: 5px;
-  padding: 0 1rem;
-  min-width: 15rem;
+  min-width: 20rem;
 }
 .details-title {
+  font-size: medium;
+  color: #42adfd;
   display: flex;
-  flex-direction: row;
-  color: rgb(70, 162, 220);
-  padding-left: 1rem;
+  align-items: center;
   cursor: pointer;
   /* border: 2px solid red; */
 }
@@ -20,27 +19,74 @@
 }
 .feels-and-humidity {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  border-top: 0.1em solid lightgray;
 }
 
 .weather-details {
-  text-align: center;
-  /* border: 2px solid red; */
-  margin: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  padding-bottom: 1.5rem;
+}
+.tempreture {
+  margin: 0;
+  font-size: 4rem;
+}
+.description {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  font-size: larger;
+  margin-bottom: 0.5em;
+}
+.city-country {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.weather-details img {
+  height: 10rem;
 }
 
 .feels-like {
-  line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7em 2em;
 }
 .feels-like h5 {
-  font-weight: 400;
-  font-size: 10px;
+  font-size: x-small;
+  margin: 0;
+  margin-left: 0.3em;
+}
+.feels-like h3 {
+  font-size: medium;
+  margin: 0;
+  margin-left: 0.3em;
+  font-weight: 500;
 }
 
 .humidity {
-  line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 0.1em solid lightgray;
+  padding: 0.7em 2em;
 }
 .humidity h5 {
-  font-weight: 400;
-  font-size: 10px;
+  font-size: x-small;
+  margin: 0;
+  margin-left: 0.3em;
+}
+.humidity h3 {
+  font-size: medium;
+  margin: 0;
+  margin-left: 0.3em;
+  font-weight: 500;
 }

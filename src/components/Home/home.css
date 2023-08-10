@@ -1,16 +1,47 @@
 .home {
   background-color: white;
-  border-radius: 5px;
+  border-radius: 0.3em;
 }
 
 .title {
-  color: rgb(70, 162, 220);
-  padding-left: 1rem;
+  font-size: medium;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  color: #42adfd;
+  display: flex;
 }
 .error-message {
   color: red;
   font-size: 14px;
   margin-top: 5px;
+}
+
+.input-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  padding-bottom: 1.5rem;
+}
+.search {
+  height: 2rem;
+  width: 15rem;
+  padding: 1px;
+  text-align: center;
+  font-size: small;
+  border: 0.1em solid lightgray;
+  border-radius: 0.3em;
+}
+
+.line {
+  width: 100%;
+}
+.or {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .form {
@@ -31,4 +62,17 @@
   cursor: pointer;
   background-color: rgb(70, 162, 220);
   border: none;
+}
+
+.btn {
+  height: 2.2rem;
+  width: 15rem;
+  padding: 1px;
+  color: white;
+  text-align: center;
+  font-size: small;
+  background-color: #42adfd;
+  border: 0;
+  border-radius: 0.3em;
+  cursor: pointer;
 }
