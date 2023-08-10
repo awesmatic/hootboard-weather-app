@@ -1,0 +1,46 @@
+.details {
+  background-color: white;
+  border-radius: 5px;
+  padding: 0 1rem;
+  min-width: 15rem;
+}
+.details-title {
+  display: flex;
+  flex-direction: row;
+  color: rgb(70, 162, 220);
+  padding-left: 1rem;
+  cursor: pointer;
+  /* border: 2px solid red; */
+}
+.details-title h5 {
+  margin-left: 1rem;
+}
+.details-title img {
+  width: 20px;
+}
+.feels-and-humidity {
+  display: flex;
+  justify-content: space-between;
+}
+
+.weather-details {
+  text-align: center;
+  /* border: 2px solid red; */
+  margin: 0 2rem;
+}
+
+.feels-like {
+  line-height: 0;
+}
+.feels-like h5 {
+  font-weight: 400;
+  font-size: 10px;
+}
+
+.humidity {
+  line-height: 0;
+}
+.humidity h5 {
+  font-weight: 400;
+  font-size: 10px;
+}
